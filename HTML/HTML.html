@@ -6,19 +6,89 @@
     <title>HTML All In One Page</title>
     <!--添加网站图标-->
     <link rel="icon" type="image/x-icon" href="HTML favicon.png">
-    <style>
-        .container{
-            width: 300px;
-            height:300px;
-            background-color: aqua;
-            display: grid;
-            place-items: center;
-        }
-    </style>
   </head>
   <body>
- <div class="container">
-    <div>p</div>
- </div>
+<!--标题-->
+<h1>This is Heading1</h1>
+<h2>This is heading2</h2>
+<!--horizontal line-->
+<hr>
+<!--段落-->
+<p>This is Paragraph</p>
+<p>This is also a Paragraph<br>I can become <strong>bold</strong>,<i> italic</i>,or <del>delete</del></p>
+<hr>
+<!--超链接-->
+<!--链接默认不跳转，通过设置_blank实现打开新窗口,title可以实现鼠标移到链接展示文字-->
+<a href="https://www.w3schools.com/" target="_blank" title="Links">W3schools</a>
+<!--如果图片无法加载 alt会显示内容-->
+<img src="#" alt="This is image">
+<hr>
+
+<!--tr为每一行的cell-->
+<table border="1">
+<!--标题-->
+  <caption>My Table</caption>
+  <tr>
+    <th>Name</th>
+    <th>Age</th>
+    <th>Gender</th>
+  </tr>
+  <tr>
+    <td>Jack</td>
+    <td>21</td>
+    <td>Male</td>
+  </tr>
+  <tr>
+    <td>Steven</td>
+    <td>19</td>
+    <td>Female</td>
+  </tr>
+</table>
+<hr>
+
+<!--无序列表-->
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>
+<!--有序列表-->
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+<hr>
+
+<!--各类表格应用-->
+<form>
+<label for="Username">Enter Username:</label>
+<input type="text" placeholder="Username">
+
+<label for="Password">Enter Password:</label>
+<input type="password" value="Password">
+
+<!--圆点选择，打勾选择，下拉框-->
+<input type="radio" disabled>
+<input type="checkbox">
+<select id="cars" name="cars">
+  <option value="volvo">Volvo</option>
+  <option value="saab">Saab</option>
+  <option value="fiat">Fiat</option>
+  <option value="audi">Audi</option>
+</select>
+<!--留言框-->
+<textarea name="message" rows="10" cols="30">
+ This is Form
+  </textarea>
+<!--提交-->
+<input type="submit">
+<br>
+<!--插入视频-->
+<video width="320" height="240" controls>
+  <source src="#" type="video/mp4">
+  <source src="#" type="video/ogg">
+</video>
+</form>
   </body>
 </html>
