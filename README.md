@@ -1,4 +1,4 @@
 # Frontend
-My first learning path is HTML
-I‘m going to study CSS
-Before I study CSS I need to learn GIT
+My first learning path is HTML</br>
+I‘m going to study CSS</br>
+Before I study CSS I need to learn GIT</br>
