@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image:url("image1.jpg");
+    background-size: 30% 100%;
+    /* 背景大小 */
+    background-repeat: no-repeat;
+    /* 背景不重复 */
+    background-position: right top;
+    /* 背景位置 */
+    background-attachment: fixed;
+    /* 背景是固定还是可以滚动{scroll} */
+}
+
+.title{
+    color:black;
+    /* 字体颜色 */
+    background-color: darkkhaki;
+    /* 背景颜色 */
+    opacity: 0.5;
+    /* 背景透明度 */
+    text-align: center;
+}
+
+.container{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    max-width: 600px;
+    /* 设置最大宽度 */
+
+    text-align:center;
+    /* 设置文本水平对齐，{justify}可以让每条线的宽度一致 */
+    vertical-align: baseline;
+    /* 垂直高度对齐 */
+    text-decoration:underline;
+    /* 文本装饰线 */
+    text-decoration-style: double;
+    /* 指定装饰线样式 */
+    text-shadow: 1px 2px 5px gray;
+    /* 文本阴影：水平，垂直，模糊，颜色 */
+    text-transform: uppercase;
+    /* 文本大小写 */
+    text-indent: 50px;
+    /* 第一行缩进 */
+    letter-spacing: 5px;
+    /* 文本之间每个字符距离 */
+    word-spacing: 10px;
+    /* 文本之间每个字的距离 */
+    line-height: 1.8;
+    /* 文本上下高度 */
+
+    background-color: bisque;
+    border-bottom: 1px solid black;
+    margin:75px;
+    /* 可以添加方向，水平居中用{auto} */
+    padding: 50px 50px;
+    /* 可以添加方向 */
+    box-sizing: border-box;
+    /* 让元素保持宽度 */
+
+    font-family: 'Times New Roman', Times, serif;
+    font-style: italic;
+    /* 一般选择斜体 */
+    font-weight: normal;
+    /* 也可以加粗{bold} */
+    font-size: 1em;
+    /* 字体大小 推荐使用{em}单位，{vm}可以让字体根据预览器大小改变 */
+    box-shadow: 2px 2px 10px black;
+    /* 盒子阴影 */
+    vertical-align: middle;
+}
+.child-container::first-letter{
+    color:greenyellow;
+}
+.child-container{
+    position: absolute;
+    left: 70%;
+    top: 80%;
+    width: 70px;
+    height: 70px;
+    background-color: darkorange;
+    text-align: center;
+}
+.flow{
+    overflow: hidden;
+    /* 溢出部分隐藏，{visible}溢出部分可见，{scroll}溢出部分添加滚动条 */
+}
+
+.list-container div{
+    float: left;
+    display: inline-block;
+}
+
+.list-1{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    margin: 5px;
+}
+.list-2{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    margin: 5px;
+}
+.list-3{
+    width: 100px;
+    height: 100px;
+    background-color: chocolate;
+    margin: 5px;
+    
+}
