@@ -12,16 +12,30 @@ body{
     /* 背景位置 */
     background-attachment: fixed;
     /* 背景是固定还是可以滚动{scroll} */
+    max-width: 100%;
+    height: auto;
 }
 
-.title{
+.nav{
     color:black;
     /* 字体颜色 */
     background-color: darkkhaki;
     /* 背景颜色 */
-    opacity: 0.5;
+    opacity: 0.8;
     /* 背景透明度 */
+}
+.nav li{
+    display: inline-block;
+    padding: 10px 80px;
     text-align: center;
+    
+}
+.nav li:hover{
+    background-color:aquamarine;
+}
+.nav a{
+    font-size: 20px;
+    text-decoration: none;
 }
 
 .container{
@@ -90,26 +104,133 @@ body{
 }
 
 .list-container div{
-    float: left;
+    text-align: center;
+    margin:100px;
     display: inline-block;
 }
 
 .list-1{
+    position: relative;
+    font-size: 1em;
+    font-family: 'Times New Roman', Times, serif;
     width: 100px;
     height: 100px;
     background-color: chocolate;
-    margin: 5px;
-}
-.list-2{
-    width: 100px;
-    height: 100px;
-    background-color: chocolate;
-    margin: 5px;
-}
-.list-3{
-    width: 100px;
-    height: 100px;
-    background-color: chocolate;
-    margin: 5px;
+    
+    
     
 }
+.list-1 p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}.list-2 p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.list-3 p{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+.list-2{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    height: 100px;
+    background-color:antiquewhite;
+   
+}
+.list-3{
+    position: relative;
+    font-family: 'Times New Roman', Times, serif;
+    width: 100px;
+    height: 100px;
+    background-color:darkgoldenrod;
+   
+    
+}
+.grad {
+    background-image: linear-gradient(red, yellow);
+    background-image: linear-gradient(to bottom right, red, yellow);
+    /* 线性渐变，可定义渐变方向 */
+    background-image: radial-gradient(red, yellow, green);
+    /* 径向渐变 */
+    background-image: conic-gradient(red, yellow, green);
+    /* 圆锥渐变 */
+  }
+
+  .move{
+    position: absolute;
+    width: 250px;
+    height: 450px;
+    background-color:paleturquoise;
+    left:40vw;
+    bottom: 5vw;
+    animation: animations 3s ease 1s infinite alternate;
+    /* 动画名字 持续时间 时间曲线 延迟 次数 方向 */
+    
+  }
+ 
+  @keyframes animations{
+    from { transform: translate(50px,100px);}
+    to {transform: scale(1.5 1.5);background-color:palevioletred}
+  }
+  @keyframes animation1 {
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+
+  .mask{
+    width: 800px;
+    height: 600px;
+    -webkit-mask-image: url(./ImageCollect/mask1.png);
+    mask-image: url(./ImageCollect/mask1.png);
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    animation: color 10s ease infinite alternate;
+  }
+  .inside-mask{
+   
+
+  }
+  @keyframes color{
+    0%   {background-color:red; left:0px; top:0px;}
+    25%  {background-color:yellow; left:200px; top:0px;}
+    50%  {background-color:blue; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:red; left:0px; top:0px;}
+  }
+ 
+
+
+  .flex-container {
+    display: flex;
+    flex-direction:row;
+    /* {column}以列方式排列，{row}以行方式排列 */
+    flex-wrap: wrap;
+    /* 决定是否换行 */
+    justify-content:center;
+    /* 定义水平位置，弹性物体居中，{flex-start/end},{space-around/between} */
+    align-items: flex-start;
+    /* 定义垂直位置，{center}，{stretch}，{baseline} */
+    align-content: center;
+    /* 定义柔性线，柔性线显示中间，{space-around}，{stretch}，{flex-start/end} */
+    background-color: DodgerBlue;
+  }
+  
+  .flex-container div {
+    background-color: #f1f1f1;
+    width: 100px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+  }
