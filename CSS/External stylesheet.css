@@ -234,3 +234,18 @@ body{
     font-size: 30px;
     text-align: center;
   }
+
+  .container{
+    display: grid;
+    column-gap: 50px;
+    /* 调整间缝大小 */
+    grid-template-columns: auto auto auto auto;
+    /* 每列宽度 */
+    grid-template-rows: auto auto auto auto;
+    /* 每行宽度 */
+  }
+  .item1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    /* 从第一行开始到第三行 */
+  }
