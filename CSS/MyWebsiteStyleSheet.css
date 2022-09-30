@@ -33,6 +33,7 @@ body{
     transition: 0.5s ease-in-out;
 
 }
+
 .nav a{
     text-decoration: none;
     color: black;
@@ -134,6 +135,25 @@ h4{
     background-size: 200% 100%;
     color:transparent;
     animation: a 5s infinite linear;
+    animation: move 6s forwards ease-in-out ;
+    line-height: 2em;
+}
+@keyframes move{
+    0%{
+        transform: rotate(20deg);
+    }
+    25%{
+        transform: rotate(40deg);
+    }
+    50%{
+        transform: rotate(-40deg);
+    }
+    75%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: scale(2);
+    }
 }
 @keyframes a{
     0%{
@@ -143,6 +163,8 @@ h4{
         background-position: -100% 0;
     }
 }
+
+
 .section4{
     position: relative;
     background-color: #79a6a3;
@@ -154,6 +176,7 @@ h4{
     position: relative;
     display: grid;
     place-items: center;
+    box-sizing: border-box;
 }
 .section5 img{ 
     position: relative;
@@ -171,10 +194,12 @@ h4{
     text-align: center;
     font-size: 2em;
     text-shadow:1px 1px 1px whitesmoke;
+    box-sizing: border-box;
 }
 .section5-text p{
    margin: 2em 0em;
    padding: 1em;
+   overflow: hidden;
 }
 .section5-text p:nth-child(n+3){
     border-left: 3px solid black;
